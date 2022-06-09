@@ -15,7 +15,7 @@ El módulo de maquinarias se genera en la necesidad de mejorar los procesos de t
   Este software esta diseñado para el uso del jefe de mantenciones y maquinarias en conjunto con el encargado que IoIngenieria designe 
   en caso de ser necesario.
   Para el acceso a la página del módulo de maquinarias el usuario deberá hacerlo a través de un ordenador que cuente con acceso a 
-  internet.
+  internet. .
 
 
 ## Software stack
