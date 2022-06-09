@@ -1,0 +1,6 @@
+.home-sitio{
+    background-image: url(../img/home.jpg) ;
+    background-size: cover;
+    height: 70 vh;
+    min-height: 700px;
+}

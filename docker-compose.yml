@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    
+    container_name: maquinaras
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - 8000:80
+ 

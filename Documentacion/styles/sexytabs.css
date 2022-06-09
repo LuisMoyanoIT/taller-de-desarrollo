@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+body {
+    font-size: 1em;
+    background: #fafafa;
+    font-family: Lato;
+    font-weight: 300;
+  }
+  h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .minimalTabs {
+    width: 100%;
+    min-width: 360px;
+    margin: auto;
+  }
+  .contents {
+    padding: 20px 20px;
+    min-height: 200px;
+  }
+ 
+  .lightTab {
+    padding: 50px 0;
+  }
+  img {
+    width: 60px;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  .minimalTabs > ul {
+    display: flex;
+    justify-content : space-around;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 0;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .minimalTabs > ul > li {
+    display: inline-block; 
+    background: #fafafa;
+    padding: 0.6em 0;
+    position: relative;  
+    margin: 0 0 0 -4px;
+  }
+  .minimalTabs > ul > li:before, .minimalTabs > ul > li:after {
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .minimalTabs > ul > li.ui-tabs-active:before, .minimalTabs > ul > li.ui-tabs-active:after, .minimalTabs > ul > li.ui-state-hover:before, .minimalTabs > ul > li.ui-state-hover:after, .minimalTabs > ul > li.ui-state-focus:before, .minimalTabs > ul > li.ui-state-focus:after {
+    opacity: 1;
+  }
+  .minimalTabs > ul > li:before, .minimalTabs > ul > li.ui-state-active.ui-state-hover:before, .minimalTabs > ul > li.ui-state-active.ui-state-focus:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 2px 3px rgba(22, 195, 255, 0.5);
+    top: 50%;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    border-radius: 100px / 10px;
+  }
+  .minimalTabs > ul > li:after, .minimalTabs > ul > li.ui-state-active.ui-state-hover:after, .minimalTabs > ul > li.ui-state-active.ui-state-focus:after {
+    content: "";
+    background: #fafafa;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+    box-shadow: inset 3px 3px 3px rgba(22, 195, 255, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  .minimalTabs > ul > li.ui-state-hover:before, .minimalTabs > ul > li.ui-state-focus:before {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .minimalTabs > ul > li.ui-state-hover:after, .minimalTabs > ul > li.ui-state-focus:after {
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  .minimalTabs > ul > li.ui-state-focus a {
+    text-decoration: underline;
+  }
+  .minimalTabs > ul > li:focus {
+    outline: none;
+  }
+  .minimalTabs > ul > li a {
+    color: #444;
+    text-decoration: none;
+  }
+  .minimalTabs > ul > li a:focus {
+    outline: none;
+  }
+  .minimalTabs > ul > li a span {
+    position: relative;
+    top: -0.5em;
+  }
+   
+  .minimalTabs.dark > ul {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+  .minimalTabs.dark > ul > li {
+    background: #333;
+  }
+  .minimalTabs.dark > ul > li:before, .minimalTabs.dark > ul > li.ui-state-active.ui-state-hover:before, .minimalTabs.dark > ul > li.ui-state-active.ui-state-focus:before {
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+  }
+  .minimalTabs.dark > ul > li:after, .minimalTabs.dark > ul > li.ui-state-active.ui-state-hover:after, .minimalTabs.dark > ul > li.ui-state-active.ui-state-focus:after {
+    background: #333;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.3), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+  }
+  .minimalTabs.dark > ul > li.ui-state-hover:before, .minimalTabs.dark > ul > li.ui-state-focus:before {
+    box-shadow: none;
+  }
+  .minimalTabs.dark > ul > li.ui-state-hover:after, .minimalTabs.dark > ul > li.ui-state-focus:after {
+    box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4);
+  }
+  .minimalTabs.dark > ul > li a {
+    color: white;
+  }
+  /* @media screen and (min-width: 1000px) { */
+    
+    .lightTab {
+      width: 100%;
+      float: left;
+      padding: 0;
+    }
+ /*}*/

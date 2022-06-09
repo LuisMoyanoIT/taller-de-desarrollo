@@ -1,0 +1,24 @@
+.btn-confirmar {
+    display: inline;
+    position: relative;
+    float: right;
+    background-color: #3fca15be;
+    color: rgb(255, 255, 255); 
+    border: 1px solid #3700ffb0;
+}
+.btn-confirmar:hover { 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.btn-cancelar{
+    display: inline;
+    background-color: #ff0000be;
+    color: #ffffff; 
+    border: 1px solid #3700ffb0;
+}
+.btn-cancelar:hover{
+    background-color: #ffffffab;
+    color: rgb(0, 0, 0);
+}
+
+
